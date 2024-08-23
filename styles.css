@@ -49,6 +49,7 @@ button {
   background-color: #2d70fd;
   color: #ffffff;
   font-size: 1.15rem;
+  font-family: "Rubik", sans-serif;
 }
 
 button:hover {
@@ -95,11 +96,14 @@ footer > span {
   border-radius: 0.5rem;
   padding: 1rem 1.5rem;
   font-size: 1rem;
+  font-family: "Rubik", sans-serif;
   color: #11175e;
 }
 
 #new-task-form > input::placeholder {
   color: #b1bacb;
+  font-size: 1rem;
+  font-family: "Rubik", sans-serif;
 }
 
 #new-task-form > button {
