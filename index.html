@@ -18,61 +18,30 @@
     <main>
       <h1>Board de Tarefas</h1>
       <form id="new-task-form">
-        <label for="new-task-input">Nome da tarefa</label>
+        <label for="new-task-input-name">Nome da tarefa</label>
         <input
-          id="new-task-input"
+          id="new-task-input-name"
+          name="title"
           type="text"
           placeholder="Nome da tarefa"
           aria-label="Nome da tarefa"
           required
         />
+        <label for="new-task-input-tag">Etiqueta</label>
+        <input
+          id="new-task-input-tag"
+          name="tag"
+          type="text"
+          placeholder="Etiqueta"
+          aria-label="Etiqueta"
+          required
+        />
         <button type="submit" aria-label="Adicionar tarefa">+</button>
       </form>
-      <div id="tasks-list-container">
-        <article class="task-card">
-          <section class="task-info-container">
-            <h5>Implementar tela de listagem de tarefas</h5>
-            <div class="task-details-container">
-              <span class="task-details-tag">frontend</span>
-              <span class="task-details-date">Criado em: 21/08/2024</span>
-            </div>
-          </section>
-          <button>Concluir</button>
-        </article>
-        <article class="task-card">
-          <section class="task-info-container">
-            <h5>Implementar tela de listagem de tarefas</h5>
-            <div class="task-details-container">
-              <span class="task-details-tag">frontend</span>
-              <span class="task-details-date">Criado em: 21/08/2024</span>
-            </div>
-          </section>
-          <button>Concluir</button>
-        </article>
-        <article class="task-card">
-          <section class="task-info-container">
-            <h5>Implementar tela de listagem de tarefas</h5>
-            <div class="task-details-container">
-              <span class="task-details-tag">frontend</span>
-              <span class="task-details-date">Criado em: 21/08/2024</span>
-            </div>
-          </section>
-          <button>Concluir</button>
-        </article>
-        <article class="task-card">
-          <section class="task-info-container">
-            <h5>Implementar tela de listagem de tarefas</h5>
-            <div class="task-details-container">
-              <span class="task-details-tag">frontend</span>
-              <span class="task-details-date">Criado em: 21/08/2024</span>
-            </div>
-          </section>
-          <button>Concluir</button>
-        </article>
-      </div>
+      <div id="tasks-list-container"></div>
       <hr />
       <footer>
-        <span>1 tarefa concluída</span>
+        <span id="done-tasks-counter"></span>
       </footer>
     </main>
   </body>
