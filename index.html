@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Board de Tarefas - Desafio Javascript DNC</title>
+    <script src="./index.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Board de Tarefas</h1>
+      <form id="new-task-form">
+        <label for="new-task-input">Nome da tarefa</label>
+        <input
+          id="new-task-input"
+          type="text"
+          placeholder="Nome da tarefa"
+          aria-label="Nome da tarefa"
+          required
+        />
+        <button type="submit" aria-label="Adicionar tarefa">+</button>
+      </form>
+      <div id="tasks-list-container">
+        <article class="task-card">
+          <section class="task-info-container">
+            <h5>Implementar tela de listagem de tarefas</h5>
+            <div class="task-details-container">
+              <span class="task-details-tag">frontend</span>
+              <span class="task-details-date">Criado em: 21/08/2024</span>
+            </div>
+          </section>
+          <button>Concluir</button>
+        </article>
+        <article class="task-card">
+          <section class="task-info-container">
+            <h5>Implementar tela de listagem de tarefas</h5>
+            <div class="task-details-container">
+              <span class="task-details-tag">frontend</span>
+              <span class="task-details-date">Criado em: 21/08/2024</span>
+            </div>
+          </section>
+          <button>Concluir</button>
+        </article>
+        <article class="task-card">
+          <section class="task-info-container">
+            <h5>Implementar tela de listagem de tarefas</h5>
+            <div class="task-details-container">
+              <span class="task-details-tag">frontend</span>
+              <span class="task-details-date">Criado em: 21/08/2024</span>
+            </div>
+          </section>
+          <button>Concluir</button>
+        </article>
+        <article class="task-card">
+          <section class="task-info-container">
+            <h5>Implementar tela de listagem de tarefas</h5>
+            <div class="task-details-container">
+              <span class="task-details-tag">frontend</span>
+              <span class="task-details-date">Criado em: 21/08/2024</span>
+            </div>
+          </section>
+          <button>Concluir</button>
+        </article>
+      </div>
+      <hr />
+      <footer>
+        <span>1 tarefa concluída</span>
+      </footer>
+    </main>
+  </body>
+</html>
